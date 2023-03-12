@@ -13,6 +13,9 @@ html {
   text-transform: uppercase;
 
   color: #424242;
+
+  margin-left: calc(100vw - 100%);
+  margin-right: 0;
 }
 
 /* --------------- MAIN --------------- */
