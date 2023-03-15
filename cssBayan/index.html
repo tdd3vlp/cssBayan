@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <main class="main">
       <div class="main-container">
@@ -19,57 +20,75 @@
 
         <!-- Serious -->
         <div class="serious block">
-          <div class="upper-line">
-            <h2 class="subheading">Why so serious?</h2>
-            <!-- <ion-icon name="add-outline" class="icon icon-active"></ion-icon> -->
-            <i class="fa fa-thin fa-xmark icon icon-active"></i>
-          </div>
-          <div class="expansion visible">
-            <img src="img/Serious.png" alt="" class="serious-img img" />
+          <input
+            type="radio"
+            name="radio-mem"
+            id="serious_S"
+            checked="checked"
+          />
+          <label for="serious_S">
+            <span class="label-text">Why so serious?</span>
+          </label>
+          <i class="fa fa-thin fa-xmark icon icon-active"></i>
+          <div class="expansion">
+            <label for="serious_S">
+              <img src="img/Serious.png" alt="" class="serious-img img" />
+            </label>
           </div>
         </div>
 
         <!-- Burning -->
         <div class="burning block">
-          <div class="upper-line">
-            <h2 class="subheading">Did you suffer enough?</h2>
-            <i class="fa fa-thin fa-xmark icon"></i>
-          </div>
+          <input type="radio" name="radio-mem" id="burning_S" />
+          <label for="burning_S">
+            <span class="label-text">Did you suffer enough?</span>
+          </label>
+          <i class="fa fa-thin fa-xmark icon"></i>
+
           <div class="expansion">
-            <img src="img/Burning.png" alt="" class="burning-img img" />
+            <label for="burning_S">
+              <img src="img/Burning.png" alt="" class="burning-img img" />
+            </label>
           </div>
         </div>
 
         <!-- Sleep -->
         <div class="sleep block">
-          <div class="upper-line">
-            <h2 class="subheading">We will never sleep...</h2>
-            <i class="fa fa-thin fa-xmark icon"></i>
-          </div>
+          <input type="radio" name="radio-mem" id="sleep_S" />
+          <label for="sleep_S">
+            <span class="label-text">We will never sleep</span>
+          </label>
+          <i class="fa fa-thin fa-xmark icon"></i>
           <div class="expansion">
-            <img src="img/Sleep.png" alt="" class="sleep-img img" />
+            <label for="sleep_S">
+              <img src="img/Sleep.png" alt="" class="sleep-img img" />
+            </label>
           </div>
         </div>
 
         <!-- Giggle -->
         <div class="giggle block">
-          <div class="upper-line">
-            <h2 class="subheading">Stop giggling!</h2>
-            <i class="fa fa-thin fa-xmark icon"></i>
-          </div>
+          <input type="radio" name="radio-mem" id="giggle_S" />
+          <label for="giggle_S">
+            <span class="label-text">Stop giggling!</span>
+          </label>
+          <i class="fa fa-thin fa-xmark icon"></i>
           <div class="expansion">
-            <img src="img/Giggle.png" alt="" class="giggle-img img" />
+            <label for="giggle_S">
+              <img src="img/Giggle.png" alt="" class="giggle-img img" />
+            </label>
           </div>
         </div>
 
         <!-- Hey -->
         <div class="hey block">
-          <div class="upper-line">
-            <h2 class="subheading">Hey, bro!</h2>
-            <i class="fa fa-thin fa-xmark icon"></i>
-          </div>
+          <input type="radio" name="radio-mem" id="hey_S" />
+          <label for="hey_S"> <span class="label-text">Hey, bro</span> </label>
+          <i class="fa fa-thin fa-xmark icon"></i>
           <div class="expansion">
-            <img src="img/Hey.png" alt="" class="hey-img img" />
+            <label for="hey_S">
+              <img src="img/Hey.png" alt="" class="hey-img img" />
+            </label>
           </div>
         </div>
       </div>

@@ -48,29 +48,28 @@ html {
 
 .block {
   cursor: pointer;
-}
-
-.upper-line {
-  margin: 0 2.5rem 0 2.5rem;
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 
-  border-top: 1px solid #424242;
+  margin-bottom: 0.5rem;
 }
 
 /* ----- BLOCK: HOVER ----- */
 
 .block:hover .icon {
-  transform: scale(1.1);
   transform: rotate(45deg);
 }
 
 .block:hover .expansion {
   overflow: hidden;
   max-height: 100rem;
-  padding-bottom: 1rem;
+}
+
+.block:hover .label-text {
+  color: #424242;
 }
 
 .block:hover .expansion .img {
@@ -84,12 +83,12 @@ html {
   transform: rotateZ(1deg);
 }
 
-.block:active .subheading {
-  color: black;
+.block:active .label-text {
+  color: #ef3e36;
 }
 
-.block:active .subheading + .icon {
-  color: black;
+.block:active .icon {
+  color: #ef3e36;
 }
 
 /* ----- HEADINGS ----- */
@@ -101,22 +100,48 @@ html {
   font-weight: 700;
 }
 
-.subheading {
-  font-size: 2.5rem;
-  font-weight: 400;
+/* ----- INPUT ----- */
+
+input {
+  display: none;
+  margin: 0;
+  padding: 0;
 }
 
-.serious .subheading {
+label {
+  min-width: 60%;
+
+  font-size: 2rem;
+}
+
+.label-text {
+  padding: 0 0 0 3rem;
+}
+
+input:checked ~ .expansion {
+  max-height: 100rem;
+}
+
+input:checked + label .label-text {
   color: #ef3e36;
+}
+
+input:checked ~ .expansion .img {
+  visibility: visible;
+  opacity: 1;
+
+  transition: opacity 0.5s linear, transform 0.1s ease-in;
 }
 
 /* ----- ICONS ----- */
 
 .icon {
-  visibility: hidden;
+  min-width: 5%;
 
+  visibility: hidden;
   font-size: 1.6rem;
-  color: #ef3e36;
+  text-align: center;
+  color: #424242;
 
   transition: transform 0.5s ease;
 }
@@ -128,14 +153,13 @@ html {
 /* ----- EXPANSION ----- */
 
 .expansion {
-  max-height: 0;
-  transition: all 0.5s cubic-bezier(1, 0, 0, 1);
-}
-
-.visible {
   overflow: hidden;
-  max-height: 100rem;
-  padding-bottom: 1rem;
+  min-width: 100%;
+  height: auto;
+
+  max-height: 0;
+
+  transition: all 0.7s;
 }
 
 /* ----- IMAGES ----- */
@@ -149,11 +173,6 @@ html {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s linear 0.5s, opacity 0.25s linear;
-}
-
-.serious-img {
-  visibility: visible;
-  opacity: 1;
 }
 
 /* ----- IMAGES:HOVER ----- */
@@ -178,14 +197,8 @@ html {
     font-size: 5rem;
   }
 
-  .subheading {
-    padding: 1rem 0 0.5rem 0rem;
-
-    font-size: 2rem;
-  }
-
   .img {
-    width: 30%;
+    width: 40%;
   }
 }
 
@@ -197,24 +210,22 @@ html {
     margin-top: 5rem;
   }
 
-  .upper-line {
-    margin: 0 2rem 0 2rem;
-  }
-
   .main-heading {
     padding: 1rem 0 0.25rem 2rem;
     font-size: 3.5rem;
   }
 
-  .subheading {
-    padding: 0.25rem 0 0.25rem 0rem;
-
-    font-size: 1.25rem;
-    font-weight: 400;
+  .label-text {
+    padding: 0 0 0 2rem;
+    font-size: 1.7rem;
   }
 
   .icon {
     font-size: 1.8rem;
+  }
+
+  .icon {
+    min-width: 5%;
   }
 
   .img {
@@ -239,15 +250,13 @@ html {
     font-size: 2.2rem;
   }
 
-  .upper-line {
-    margin: 0 1.5rem 0 1.5rem;
+  .label-text {
+    padding: 0 0 0 1.5rem;
+    font-size: 1.5rem;
   }
 
-  .subheading {
-    padding: 0.25rem 0 0.5rem 0rem;
-
-    font-size: 1rem;
-    font-weight: 400;
+  .icon {
+    min-width: 10%;
   }
 
   .img {
