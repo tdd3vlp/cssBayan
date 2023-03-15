@@ -16,6 +16,8 @@ html {
 
   margin-left: calc(100vw - 100%);
   margin-right: 0;
+
+  overflow-y: scroll;
 }
 
 /* --------------- MAIN --------------- */
@@ -180,10 +182,6 @@ html {
     padding: 1rem 0 0.5rem 0rem;
 
     font-size: 2rem;
-  }
-
-  .icon {
-    font-size: 2.2rem;
   }
 
   .img {
