@@ -38,7 +38,7 @@ html {
   color: #ef3e36;
 }
 
-.main-container:hover .fa-xmark {
+.main-container:hover .icon {
   visibility: visible;
 }
 
@@ -60,7 +60,7 @@ html {
 
 /* ----- BLOCK: HOVER ----- */
 
-.block:hover .fa-xmark {
+.block:hover .icon {
   transform: scale(1.1);
   transform: rotate(45deg);
 }
@@ -86,7 +86,7 @@ html {
   color: black;
 }
 
-.block:active .subheading + .fa-xmark {
+.block:active .subheading + .icon {
   color: black;
 }
 
@@ -110,17 +110,16 @@ html {
 
 /* ----- ICONS ----- */
 
-.fa-xmark {
+.icon {
   visibility: hidden;
 
-  font-size: 1.1rem;
-
+  font-size: 1.6rem;
   color: #ef3e36;
 
   transition: transform 0.5s ease;
 }
 
-.fa-xmark-active {
+.icon-active {
   transform: rotate(45deg);
 }
 
@@ -183,7 +182,7 @@ html {
     font-size: 2rem;
   }
 
-  .fa-xmark {
+  .icon {
     font-size: 2.2rem;
   }
 
@@ -216,7 +215,7 @@ html {
     font-weight: 400;
   }
 
-  .fa-xmark {
+  .icon {
     font-size: 1.8rem;
   }
 
